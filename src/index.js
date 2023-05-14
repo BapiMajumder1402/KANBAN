@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
 import { RecoilRoot } from 'recoil';
+import {BrowserRouter} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RecoilRoot>
     <ChakraProvider>
+      <BrowserRouter>
       <App />
+      </BrowserRouter>
     </ChakraProvider>
   </RecoilRoot>
 );

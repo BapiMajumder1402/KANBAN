@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import d from "./Description.module.css";
-import {GrMore} from 'react-icons/gr'
+import { GrMore } from "react-icons/gr";
 import {
   Modal,
   ModalOverlay,
@@ -15,6 +15,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { GrView } from "react-icons/gr";
 import { MdOutlineViewComfy } from "react-icons/md";
+import { itemId } from "../CardComponent/CardComponent";
 
 function Description() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -45,7 +46,7 @@ function Description() {
 
   return (
     <div>
-      <GrMore onClick={onOpen}/>
+      <GrMore onClick={onOpen} />
       <Modal
         closeOnOverlayClick={false}
         isOpen={isOpen}

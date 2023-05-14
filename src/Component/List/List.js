@@ -9,9 +9,10 @@ import { ListAtom } from '../Atom/Atom'
 import { useRecoilState } from 'recoil'
 
 export default function List() {
-    const [listInput, setListInput] = useState("")
+    const [listInput, setListInput] = useState()
     const [mainList , setMainList ] = useRecoilState(ListAtom)
     const [show, setshow] = useState(false)
+
     function toogle() {
         setshow(!show)
     }

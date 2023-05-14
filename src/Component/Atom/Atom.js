@@ -1,12 +1,11 @@
-import {atom} from 'recoil'
+import { atom } from "recoil";
 
 export const ListAtom = atom({
-    key:"ListAtom",
-    default: [],
-})
-
+  key: "ListAtom",
+  default: [],
+});
 
 export const TodoAtom = atom({
-    key:"TodoTask",
-    default: []
-})
+  key: "TodoTask",
+  default: [],
+});
