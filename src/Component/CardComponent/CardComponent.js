@@ -7,9 +7,9 @@ import { useRecoilState } from 'recoil'
 import { TodoAtom } from '../Atom/Atom'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { v4 as uuidv4 } from 'uuid';
-import {CiEdit} from 'react-icons/ci';
-import { useNavigate } from 'react-router-dom';  
-export  var itemId;
+// import {CiEdit} from 'react-icons/ci';
+// import { useNavigate } from 'react-router-dom';  
+// export  var itemId;
 
 function CardComponent() {
     const [show, setshow] = useState(false)
@@ -37,19 +37,20 @@ function CardComponent() {
     }
     console.log(todoList)
     
-    const nav =useNavigate();
+    // const nav =useNavigate();
 
-    function handleFocus(id){
-        console.log(id)
-        itemId=id;
-       nav("/description")
-    }
+    // function handleFocus(id){
+    //     console.log(id)
+    //     itemId=id;
+    //    nav("/description")
+    // }
     return (
         <div className={card.container}>
             <div>{todoList.map((item)=>{
                 return(
                     <div className={card.todo} key={item.id}>
-                        <p>{item.task}</p><CiEdit onClick={handleFocus(item.id)}/>
+                        <p>{item.task}</p>
+                        {/* <CiEdit onClick={handleFocus(item.id)}/> */}
                         {/* <p><PopOver /></p> */}
                     </div>
                 )

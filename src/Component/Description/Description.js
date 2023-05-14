@@ -15,7 +15,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { GrView } from "react-icons/gr";
 import { MdOutlineViewComfy } from "react-icons/md";
-import { itemId } from "../CardComponent/CardComponent";
+// import { itemId } from "../CardComponent/CardComponent";
 
 function Description() {
   const { isOpen, onOpen, onClose } = useDisclosure();
