@@ -32,7 +32,6 @@ function CardComponent() {
   }
 
   function submitTodo() {
-    
     const newTask = {
       id: "",
       task: "",
